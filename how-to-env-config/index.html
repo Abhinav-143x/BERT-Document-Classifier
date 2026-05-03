@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../how-to-env-config/">
+        <link rel="prev" href="../tutorial-getting-started/">
       
       
-        <link rel="next" href="../decisions/">
+        <link rel="next" href="../developer/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Developer Guide - BERT Document Classifier</title>
+        <title>Environment & Ports - BERT Document Classifier</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developer-readme-dev_readmemd" class="md-skip">
+        <a href="#how-to-manage-environments-and-port-configurations" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Developer Guide
+              Environment & Ports
             
           </span>
         </div>
@@ -236,11 +236,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../how-to-env-config/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -256,11 +258,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../developer/" class="md-tabs__link">
         
   
   
@@ -483,26 +483,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -520,7 +525,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -533,41 +538,6 @@
             
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-env-config/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Environment & Ports
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
   
   
     
@@ -589,7 +559,7 @@
   <span class="md-ellipsis">
     
   
-    Developer Guide
+    Environment & Ports
   
 
     
@@ -607,7 +577,7 @@
   <span class="md-ellipsis">
     
   
-    Developer Guide
+    Environment & Ports
   
 
     
@@ -633,22 +603,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#environment-setup" class="md-nav__link">
+  <a href="#activate-the-project-environment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🛠️ Environment Setup
+        Activate the Project Environment
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🛠️ Environment Setup">
+    <nav class="md-nav" aria-label="Activate the Project Environment">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#windows-powershell" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites
+        Windows (PowerShell)
       
     </span>
   </a>
@@ -656,10 +626,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#local-development" class="md-nav__link">
+  <a href="#linux-macos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Local Development
+        Linux / macOS
       
     </span>
   </a>
@@ -672,10 +642,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-structure" class="md-nav__link">
+  <a href="#configure-a-custom-api-port" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗️ Project Structure
+        Configure a Custom API Port
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure a Custom API Port">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temporary-override-windows-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporary Override (Windows PowerShell)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporary-override-linuxmacos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporary Override (Linux/macOS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-project-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Project Dependencies
       
     </span>
   </a>
@@ -683,21 +692,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
+  <a href="#troubleshoot-port-conflicts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Testing
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📦 Deployment
+        Troubleshoot Port Conflicts
       
     </span>
   </a>
@@ -708,6 +706,41 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -810,42 +843,43 @@
 
 
 
-<h1 id="developer-readme-dev_readmemd">Developer README (DEV_README.md)</h1>
-<h2 id="environment-setup">🛠️ Environment Setup</h2>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Python 3.11 or higher</li>
-<li><code>pip</code> and <code>venv</code></li>
-<li>Docker (optional, for containerization)</li>
-</ul>
-<h3 id="local-development">Local Development</h3>
+<h1 id="how-to-manage-environments-and-port-configurations">How-to: Manage Environments and Port Configurations</h1>
+<p>This guide provides practical steps for managing the local development environment and resolving common configuration conflicts.</p>
+<h2 id="activate-the-project-environment">Activate the Project Environment</h2>
+<p>To ensure you are using the correct library versions and Python interpreter, always work within the scoped virtual environment.</p>
+<h3 id="windows-powershell">Windows (PowerShell)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">.\</span><span class="n">bert-classifier-env</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">activate</span>
+</code></pre></div>
+<h3 id="linux-macos">Linux / macOS</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">source</span><span class="w"> </span>bert-classifier-env/bin/activate
+</code></pre></div>
+<h2 id="configure-a-custom-api-port">Configure a Custom API Port</h2>
+<p>By default, the API service runs on port <code>8081</code> to avoid collisions with standard web services (often on <code>8000</code> or <code>8080</code>). You can override this setting using the <code>PORT</code> environment variable.</p>
+<h3 id="temporary-override-windows-powershell">Temporary Override (Windows PowerShell)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">$env:PORT</span><span class="p">=</span><span class="n">9000</span><span class="p">;</span> <span class="n">python</span> <span class="n">src</span><span class="p">/</span><span class="n">main</span><span class="p">.</span><span class="n">py</span>
+</code></pre></div>
+<h3 id="temporary-override-linuxmacos">Temporary Override (Linux/macOS)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">PORT</span><span class="o">=</span><span class="m">9000</span><span class="w"> </span>python<span class="w"> </span>src/main.py
+</code></pre></div>
+<h2 id="update-project-dependencies">Update Project Dependencies</h2>
+<p>When a new package is required, follow this workflow to ensure the <code>bert-classifier-env</code> remains consistent.</p>
 <ol>
-<li><strong>Create Virtual Environment</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Windows: venv\Scripts\activate</span>
+<li><strong>Activate</strong> the environment as shown above.</li>
+<li><strong>Install</strong> the package:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>&lt;package-name&gt;
 </code></pre></div></li>
-<li><strong>Install Dependencies</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>transformers<span class="w"> </span>torch<span class="w"> </span>fastapi<span class="w"> </span>uvicorn<span class="w"> </span>scikit-learn
+<li><strong>Verify</strong> the installation:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>show<span class="w"> </span>&lt;package-name&gt;
 </code></pre></div></li>
 </ol>
-<h2 id="project-structure">🏗️ Project Structure</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>BERT-Document-Classifier/
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── src/                # Source code
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── data/               # Datasets (gitignored)
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── models/             # Local model checkpoints
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── tests/              # Unit and integration tests
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── AGENT.md            # AI Agent guidelines
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>├── DECISIONS.md        # Architectural decisions
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>└── CHANGELOG.md        # Semantic versioning log
-</code></pre></div>
-<h2 id="testing">🧪 Testing</h2>
-<p>Run tests using pytest:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pytest
-</code></pre></div></p>
-<h2 id="deployment">📦 Deployment</h2>
-<p>Build the Docker image:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>bert-classifier<span class="w"> </span>.
-</code></pre></div></p>
+<h2 id="troubleshoot-port-conflicts">Troubleshoot Port Conflicts</h2>
+<p>If you see an error like <code>[Errno 10048] error while attempting to bind on address</code>, the port is already in use by another project.</p>
+<ol>
+<li><strong>Identify the process</strong> (Windows):
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">netstat</span> <span class="n">-ano</span> <span class="p">|</span> <span class="n">findstr</span> <span class="p">:</span><span class="n">8081</span>
+</code></pre></div></li>
+<li><strong>Action</strong>: Either kill the conflicting process or use a different port for this project as described in the "Configure a Custom API Port" section above.</li>
+</ol>
 
 
 

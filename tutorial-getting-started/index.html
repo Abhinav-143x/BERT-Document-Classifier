@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../how-to-env-config/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../decisions/">
+        <link rel="next" href="../how-to-env-config/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Developer Guide - BERT Document Classifier</title>
+        <title>Getting Started - BERT Document Classifier</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developer-readme-dev_readmemd" class="md-skip">
+        <a href="#tutorial-your-first-steps-with-bert-and-fastapi" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Developer Guide
+              Getting Started
             
           </span>
         </div>
@@ -216,11 +216,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../tutorial-getting-started/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -256,11 +258,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../developer/" class="md-tabs__link">
         
   
   
@@ -396,26 +396,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -433,7 +438,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -448,10 +453,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../tutorial-getting-started/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -467,6 +499,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-initialize-the-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Initialize the Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-launch-the-api-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Launch the API Service
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-test-the-tokenizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Test the Tokenizer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -570,37 +688,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Developer Guide
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../developer/" class="md-nav__link">
         
   
   
@@ -616,98 +707,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#environment-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Environment Setup
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Environment Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Local Development
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Project Structure
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧪 Testing
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📦 Deployment
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -810,42 +809,49 @@
 
 
 
-<h1 id="developer-readme-dev_readmemd">Developer README (DEV_README.md)</h1>
-<h2 id="environment-setup">🛠️ Environment Setup</h2>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Python 3.11 or higher</li>
-<li><code>pip</code> and <code>venv</code></li>
-<li>Docker (optional, for containerization)</li>
-</ul>
-<h3 id="local-development">Local Development</h3>
+<h1 id="tutorial-your-first-steps-with-bert-and-fastapi">Tutorial: Your First Steps with BERT and FastAPI</h1>
+<p>This tutorial will guide you through the process of setting up the project and running your first text-processing task using a BERT tokenizer. By the end of this lesson, you will have a live API service that can translate human language into the numerical tokens used by modern language models.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before starting, ensure you have the following installed:
+- Python 3.11 or higher
+- A terminal/command prompt (PowerShell is recommended for Windows users)</p>
+<h2 id="step-1-initialize-the-environment">Step 1: Initialize the Environment</h2>
+<p>To keep this project's dependencies isolated and avoid conflicts with other Python projects on your machine, we use a project-specific virtual environment named <code>bert-classifier-env</code>.</p>
 <ol>
-<li><strong>Create Virtual Environment</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Windows: venv\Scripts\activate</span>
-</code></pre></div></li>
-<li><strong>Install Dependencies</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>transformers<span class="w"> </span>torch<span class="w"> </span>fastapi<span class="w"> </span>uvicorn<span class="w"> </span>scikit-learn
-</code></pre></div></li>
-</ol>
-<h2 id="project-structure">🏗️ Project Structure</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>BERT-Document-Classifier/
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── src/                # Source code
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── data/               # Datasets (gitignored)
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── models/             # Local model checkpoints
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── tests/              # Unit and integration tests
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── AGENT.md            # AI Agent guidelines
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>├── DECISIONS.md        # Architectural decisions
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>└── CHANGELOG.md        # Semantic versioning log
+<li>Open your terminal in the project root directory.</li>
+<li>Activate the environment:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># Windows</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">.\</span><span class="n">bert-classifier-env</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">activate</span>
 </code></pre></div>
-<h2 id="testing">🧪 Testing</h2>
-<p>Run tests using pytest:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pytest
+   You should now see <code>(bert-classifier-env)</code> at the beginning of your command prompt.</li>
+</ol>
+<h2 id="step-2-launch-the-api-service">Step 2: Launch the API Service</h2>
+<p>We use FastAPI to serve our model logic. The main entry point is located in <code>src/main.py</code>.</p>
+<p>Run the following command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>src/main.py
 </code></pre></div></p>
-<h2 id="deployment">📦 Deployment</h2>
-<p>Build the Docker image:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>bert-classifier<span class="w"> </span>.
+<p>You should see output indicating that the server is running on <code>http://0.0.0.0:8081</code>.</p>
+<h2 id="step-3-test-the-tokenizer">Step 3: Test the Tokenizer</h2>
+<p>Now that the service is live, we can verify that BERT is correctly processing text. The tokenizer breaks down sentences into "sub-words" and assigns each a unique ID from its pre-trained vocabulary.</p>
+<ol>
+<li>Open your web browser.</li>
+<li>Navigate to the following URL:
+   <a href="http://localhost:8081/test-tokenizer?text=I%20love%20engineering">http://localhost:8081/test-tokenizer?text=I love engineering</a></li>
+</ol>
+<h2 id="results">Results</h2>
+<p>You should receive a JSON response similar to this:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;I love engineering&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">&quot;tokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;i&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;love&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;engineering&quot;</span><span class="p">],</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">&quot;token_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1045</span><span class="p">,</span><span class="w"> </span><span class="mi">2293</span><span class="p">,</span><span class="w"> </span><span class="mi">5030</span><span class="p">]</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
 </code></pre></div></p>
+<p>This confirms that:
+- The <strong>FastAPI</strong> server is correctly routing requests.
+- The <strong>BERT Tokenizer</strong> is successfully loaded and operational.
+- Your <strong>Local Environment</strong> is configured correctly.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Congratulations! You have successfully deployed a basic NLP service. In the next tutorial, we will explore how to load and clean external datasets for model training.</p>
 
 
 
