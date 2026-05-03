@@ -1,0 +1,29 @@
+site_name: BERT Document Classifier
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep orange
+      accent: cyan
+    - scheme: default
+      primary: deep orange
+      accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Developer Guide: developer.md
+  - Architecture Decisions: decisions.md
+  - Version History: changelog.md
+  - Project Vision: vision.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
