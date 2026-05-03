@@ -1,54 +1,55 @@
-# Developer README (DEV_README.md)
+# Technical Reference: BERT Document Classifier
 
-## 🛠️ Environment Setup
+This document provides a technical specification of the project structure, dependencies, and configuration parameters. It is intended as a map for developers who are already familiar with the system.
 
-### Prerequisites
-- Python 3.11 or higher
-- `pip` and `venv`
-- Docker (optional, for containerization)
+## Project Structure
 
-### Local Development
-1. **Create Virtual Environment**:
-   ```bash
-   python -m venv bert-classifier-env
-   source bert-classifier-env/bin/activate  # Windows: bert-classifier-env\Scripts\activate
-   ```
-2. **Install Dependencies**:
-   ```bash
-   pip install transformers torch fastapi uvicorn scikit-learn pandas
-   ```
+The repository is organized into the following functional directories:
 
-## 🏗️ Project Structure
-```text
-BERT-Document-Classifier/
-├── src/                    # Source code
-├── data/                   # Datasets (gitignored)
-├── models/                 # Local model checkpoints
-├── tests/                  # Unit and integration tests
-├── bert-classifier-env/    # Project-specific virtual environment
-├── AGENT.md                # AI Agent guidelines
-├── DECISIONS.md            # Architectural decisions
-└── CHANGELOG.md            # Semantic versioning log
-```
+| Path | Purpose |
+| :--- | :--- |
+| `src/` | Primary source code containing model logic, preprocessing, and API routes. |
+| `docs/` | Diátaxis-compliant documentation site (MkDocs). |
+| `tests/` | Unit and integration tests. |
+| `data/` | Local storage for datasets (gitignored). |
+| `models/` | Storage for pre-trained model weights and fine-tuned checkpoints. |
+| `site/` | Generated documentation site (build output). |
 
-## 🚀 Running the API
-The API defaults to port `8081` to avoid conflicts with other projects.
-```bash
-python src/main.py
-```
-To use a custom port:
-```bash
-$env:PORT=9000; python src/main.py
-```
+## Core Source Files
 
-## 🧪 Testing
-Run tests using pytest:
-```bash
-pytest
-```
+- **`src/main.py`**: Entry point for the FastAPI application. Handles routing and initialization.
+- **`src/preprocess.py`**: Contains the `TextPreprocessor` class for text normalization.
+- **`src/data_loader.py`**: Utility for fetching and splitting the 20 Newsgroups dataset.
 
-## 📦 Deployment
-Build the Docker image:
-```bash
-docker build -t bert-classifier .
-```
+## Dependency Specification
+
+The project requires **Python 3.11+**. Key dependencies include:
+
+- `transformers`: HuggingFace library for BERT model loading.
+- `torch`: Backend for tensor computations and model inference.
+- `fastapi`: Web framework for the API layer.
+- `uvicorn`: ASGI server for running the FastAPI application.
+- `scikit-learn`: Used for dataset utilities and evaluation metrics.
+- `pandas`: Data manipulation and tabular representation.
+
+## Configuration Parameters
+
+The application behavior can be modified through environment variables:
+
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `PORT` | The network port the API will listen on. | `8081` |
+| `HOST` | The network host address. | `0.0.0.0` |
+
+## Build Specifications
+
+### Docker Configuration
+The project is container-ready. 
+- **Base Image**: `python:3.11-slim`
+- **Exposed Port**: `8081` (default)
+- **Entry Point**: `python src/main.py`
+
+---
+*Looking for instructions?*
+*   **How-to**: [Environment Configuration](./docs/how-to-env-config.md)
+*   **Tutorial**: [Getting Started](./docs/tutorial-getting-started.md)
