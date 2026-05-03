@@ -16,6 +16,10 @@ theme:
 
 nav:
   - Home: index.md
+  - Tutorials:
+      - Getting Started: tutorial-getting-started.md
+  - How-to Guides:
+      - Environment & Ports: how-to-env-config.md
   - Developer Guide: developer.md
   - Architecture Decisions: decisions.md
   - Version History: changelog.md
