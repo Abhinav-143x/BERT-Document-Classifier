@@ -1,0 +1,19 @@
+# Environments
+venv/
+bert-classifier-env/
+.env
+__pycache__/
+*.pyc
+
+# AI Context (Local Only)
+AGENT.md
+
+# Data & Models
+data/*
+models/*
+!data/.gitkeep
+!models/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
